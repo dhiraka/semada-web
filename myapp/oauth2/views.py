@@ -38,7 +38,7 @@ def signin():
     # HTTP GET
     return render_template(
         'oauth2/oauth2.html',
-        title='Sign in to continue - MYAPP',
+        title='Sign in to continue - Semada',
         form=form)
 
 
@@ -71,7 +71,7 @@ def authorized(provider):
         # for the user session.
         login_user(user)
         flash('Signed in successfully.', 'info')
-        return redirect(url_for('main.index'))
+        return redirect(url_for('api.overview'))
 
     else:
         flash('Authentication failed!', 'error')

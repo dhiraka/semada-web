@@ -17,7 +17,7 @@
     {% block meta_extras %}{%- endblock meta_extras %}
     {%- endblock meta %}
     {# dynamic title for template: add title variable while rendering #}
-    <title>{% block title %}Welcome to MYAPP{%- endblock title %}</title>
+    <title>{% block title %}Welcome to Semada{%- endblock title %}</title>
     {%- block styles %}
     <!-- Bootstrap 4 Beta - CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -34,11 +34,9 @@
     {% block navbar %}
     <!-- http://jinja.pocoo.org/docs/2.9/tricks/ -->
     {% set navigation_bar = [
-        ('/stores', 'stores', 'Stores'),
-        ('/api', 'api', 'API')
     ] -%}
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="/">MYAPP</a>
+        <a class="navbar-brand" href="/">Semada</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
